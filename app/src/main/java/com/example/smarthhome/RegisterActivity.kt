@@ -16,7 +16,7 @@ class RegisterActivity: AppCompatActivity() {
     private lateinit var signUpButton: Button
     private lateinit var cancelButton: Button
 
-    private var credentials = mapOf(fullname to "Catana Radu", username to "cr7", email to "cr7@email.com",password to "cr7654321")
+    private var credentials = mapOf("fullname" to "Catana Radu", "username" to "cr7", "email" to "cr7@email.com","password" to "cr7654321")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,9 +49,9 @@ class RegisterActivity: AppCompatActivity() {
     }
 
     private fun checkCredentials(): Boolean {
-        return fullname.text.equals(credentials[fullname]) &&
-                username.text.equals(credentials[username]) &&
-                email.text.equals(credentials[email]) &&
-                password.text.equals(credentials[password])
+        return fullname.text.equals(credentials["fullname"]) &&
+                username.text.equals(credentials["username"]) &&
+                email.text.equals(credentials["email"]) &&
+                password.text.equals(credentials["password"])
     }
 }
