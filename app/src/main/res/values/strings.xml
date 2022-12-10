@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">SmarthHome</string>
+    <string name="app_name">SmartHome</string>
+    <string name="welcome">WELCOME</string>
+    <string name="username_string">Username:</string>
+    <string name="pass_string">Password:</string>
+    <string name="login_string">Login</string>
+    <string name="username_input">Username</string>
+    <string name="signup">Don\'t you have an account? Sign up</string>
+
+    <string name="wrong_username_string"></string>
+    <string name="wrong_pass_string"></string>
+    <string name="success_string"></string>
+
 </resources>
