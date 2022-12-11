@@ -11,4 +11,13 @@
     <string name="wrong_pass_string"></string>
     <string name="success_string"></string>
 
+<!--    REGISTER SCREEN-->
+    <string name="register_title">Please create an account</string>
+<!--    PLACEHOLDERS-->
+    <string name="username_placeholder">Username</string>
+    <string name="fullname_placeholder">Full Name</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="signup_placeholder">Create account</string>
+    <string name="cancel_placeholder">Cancel</string>
 </resources>
