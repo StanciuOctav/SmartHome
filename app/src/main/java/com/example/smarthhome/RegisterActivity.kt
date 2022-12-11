@@ -1,5 +1,6 @@
 package com.example.smarthhome
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -36,14 +37,14 @@ class RegisterActivity: AppCompatActivity() {
 
         signUpButton.setOnClickListener {
             if (checkCredentials()) {
-                println("REDIRECT TO LOGIN")
+                startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
             } else {
                 println("SHOW ALERT")
             }
         }
 
         cancelButton.setOnClickListener {
-            println("REDIRECT TO LOGIN")
+            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
         }
 
     }

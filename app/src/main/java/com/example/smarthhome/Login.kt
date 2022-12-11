@@ -1,5 +1,6 @@
 package com.example.smarthhome
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
         if (user.equals( "admin") && pass.equals( "password"))
         {
             textViewSuccessful.text = "Successful login"
-           // startActivity(Intent(this,BookingActivity::class.java))
+           startActivity(Intent(this,HomePage::class.java))
         }
 
         else if (isValidCredidentials(user,pass))
