@@ -2,4 +2,24 @@
     <string name="app_name">SmarthHome</string>
     <string name="username">Username</string>
     <string name="homepage_string">"Choose..."</string>
+    <string name="welcome">WELCOME</string>
+    <string name="username_string">Username:</string>
+    <string name="pass_string">Password:</string>
+    <string name="login_string">Login</string>
+    <string name="username_input">Username</string>
+    <string name="signup">Don\'t you have an account? Sign up</string>
+
+    <string name="wrong_username_string"></string>
+    <string name="wrong_pass_string"></string>
+    <string name="success_string"></string>
+
+<!--    REGISTER SCREEN-->
+    <string name="register_title">Please create an account</string>
+<!--    PLACEHOLDERS-->
+    <string name="username_placeholder">Username</string>
+    <string name="fullname_placeholder">Full Name</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="signup_placeholder">Create account</string>
+    <string name="cancel_placeholder">Cancel</string>
 </resources>
