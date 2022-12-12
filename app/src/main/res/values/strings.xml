@@ -22,4 +22,6 @@
     <string name="password_placeholder">Password</string>
     <string name="signup_placeholder">Create account</string>
     <string name="cancel_placeholder">Cancel</string>
+    <!--    PLACEHOLDERS-->
+    <string name="choose_room_placeholder">Choose room</string>
 </resources>
