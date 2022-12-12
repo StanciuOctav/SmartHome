@@ -23,9 +23,13 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginButton:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        getSupportActionBar()?.hide();
+        supportActionBar?.hide();
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.login_layout)
+        val signUp = findViewById<TextView>(R.id.textViewSignUp)
+        signUp.setOnClickListener {
+            startActivity(Intent(this,RegisterActivity::class.java))
+        }
         initializeViews();
     }
 
@@ -78,22 +82,22 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun isValidCredidentials(user:String,pass:String): Boolean {
+    private fun isValidCredidentials(user:String, pass:String): Boolean {
         return !emptyUsername(user) && !emptyPass(pass)
                 && !lengthUsername(user) && !lengthPass(pass);
     }
 
-    fun emptyUsername(user:String): Boolean {
+    private fun emptyUsername(user:String): Boolean {
         return user== ""}
 
-    fun emptyPass(pass:String): Boolean {
+    private fun emptyPass(pass:String): Boolean {
         return pass== ""}
 
-    fun lengthPass(pass:String): Boolean {
+    private fun lengthPass(pass:String): Boolean {
         return  pass.length <6
     }
 
-    fun lengthUsername(user:String): Boolean {
+    private fun lengthUsername(user:String): Boolean {
         return  user.length <3
     }
 }

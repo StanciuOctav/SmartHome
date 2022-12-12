@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    tools:context=".DoorDetailsActivity">
+
+
+        <TextView
+            android:id="@+id/textViewChosenDoorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    <Switch
+        android:id="@+id/switchLockDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:checked="true"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/door_notifications_string"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"></TextView>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="5"
+        android:alignmentMode="alignMargins"
+        android:background="@color/purple_200"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:padding="5dp"
+        android:rowCount="4">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:text="Door locked at 9:22 AM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/messages" />
+            <TextView
+                android:id="@+id/textViewInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:text="Door unlocked at 5:03 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/messages" />
+
+            <TextView
+                android:id="@+id/textViewInfo3"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+
+                android:text="Door locked at 5:05 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/messages" />
+
+            <TextView
+                android:id="@+id/textViewInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Someone tried to unlock the door at 10:00 PM"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/messages" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

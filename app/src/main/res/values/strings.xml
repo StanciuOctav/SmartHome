@@ -2,6 +2,7 @@
     <string name="app_name">SmarthHome</string>
     <string name="username">Username</string>
     <string name="homepage_string">"Choose..."</string>
+    <!--    LOGIN SCREEN-->
     <string name="welcome">WELCOME</string>
     <string name="username_string">Username:</string>
     <string name="pass_string">Password:</string>
@@ -22,4 +23,24 @@
     <string name="password_placeholder">Password</string>
     <string name="signup_placeholder">Create account</string>
     <string name="cancel_placeholder">Cancel</string>
+
+    <!--    DOOR SCREEN-->
+    <string name="door_title_string">Choose a door:</string>
+    <string name="front_door_string">Front door</string>
+    <string name="back_door_string">Back door</string>
+    <string name="bedroom_door_string">Bedroom door</string>
+    <string name="balcony_door_string">Balcony door</string>
+
+    <!--    DOOR DETAILS SCREEN-->
+    <string name="door_notifications_string">Notifications</string>
+
+    <!--    TV REMOTE SCREEN-->
+    <string name="tv_string">TV REMOTE</string>
+
+
+
+
+
+
+
 </resources>

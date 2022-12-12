@@ -51,10 +51,15 @@ import androidx.cardview.widget.CardView
     // Private methods
 
     private fun clickedCardView() {
-//        findViewById<CardView>(R.id.doorCard).setOnClickListener {
-//            val intent = Intent(this@HomePage, DoorActivity::class.java)
-//            startActivity(intent)
-//        }
+        findViewById<CardView>(R.id.doorCard).setOnClickListener {
+            val intent = Intent(this@HomePage, DoorActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<CardView>(R.id.remoteCard).setOnClickListener {
+            val intent = Intent(this@HomePage, TvActivity::class.java)
+            startActivity(intent)
+        }
+
         //in this method we create the new activities for each feature
     }
 }
