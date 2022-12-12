@@ -23,6 +23,7 @@ import androidx.cardview.widget.CardView
             actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
             actionBar.setCustomView(R.layout.abs_layout);
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
             //TO DO - set with logged username
         }
 
@@ -41,7 +42,7 @@ import androidx.cardview.widget.CardView
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                finish()
+                onBackPressed()
                 return true
             }
         }
@@ -51,10 +52,10 @@ import androidx.cardview.widget.CardView
     // Private methods
 
     private fun clickedCardView() {
-//        findViewById<CardView>(R.id.doorCard).setOnClickListener {
-//            val intent = Intent(this@HomePage, DoorActivity::class.java)
-//            startActivity(intent)
-//        }
+        findViewById<CardView>(R.id.cameraCard).setOnClickListener {
+            val intent = Intent(this@HomePage, SecurityCamera::class.java)
+            startActivity(intent)
+        }
         //in this method we create the new activities for each feature
     }
 }

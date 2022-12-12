@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">SmarthHome</string>
+    <!-- Home Screen Camera -->
     <string name="username">Username</string>
-    <string name="homepage_string">"Choose..."</string>
+    <string name="homepage_string">Choose...</string>
+
+    <!-- Security Camera -->
+    <string name="security_camera_string">Choose camera</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="baby_camera">Baby Camera</string>
+    <string name="add_camera">Add Camera</string>
+    <string name="view_saved_recordings">View Saved Recordings</string>
+    <string name="save_recording">Save Recording</string>
+    <string name="security_camera_warning">Recordings will show footage for the last 24 hours, all footage older than that will be deleted.If you want to save recordings for longer, tab the Save Recording button and choose the time interval</string>
+
     <string name="welcome">WELCOME</string>
     <string name="username_string">Username:</string>
     <string name="pass_string">Password:</string>
