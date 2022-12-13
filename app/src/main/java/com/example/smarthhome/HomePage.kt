@@ -65,6 +65,16 @@ import androidx.cardview.widget.CardView
             val intent = Intent(this@HomePage, SecurityCamera::class.java)
             startActivity(intent)
         }
+
+        findViewById<CardView>(R.id.lightCard).setOnClickListener {
+            val intent = Intent(this@HomePage, LightsActivity::class.java)
+            startActivity(intent)
+        }
+
+//        findViewById<CardView>(R.id.temperatureCard).setOnClickListener {
+//            val intent = Intent(this@HomePage, TemperatureActivity::class.java)
+//            startActivity(intent)
+//        }
         //in this method we create the new activities for each feature
     }
 }
