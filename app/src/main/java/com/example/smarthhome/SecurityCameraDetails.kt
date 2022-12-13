@@ -10,11 +10,11 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
- class HomePage: AppCompatActivity() {
+class SecurityCameraDetails: AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.homepage)
+        setContentView(R.layout.security_camera_details)
         // calling the action bar
         var actionBar = supportActionBar
 
@@ -23,11 +23,8 @@ import androidx.cardview.widget.CardView
             actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
             actionBar.setCustomView(R.layout.abs_layout);
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
             //TO DO - set with logged username
         }
-
-        clickedCardView()
     }
 
     // Override methods
@@ -39,32 +36,13 @@ import androidx.cardview.widget.CardView
     }
 
     // this event will enable the back function to the button on press
-    override fun onContextItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> {
-                onBackPressed()
-                return true
-            }
-        }
-        return super.onContextItemSelected(item)
-    }
-
-    // Private methods
-
-    private fun clickedCardView() {
-        findViewById<CardView>(R.id.doorCard).setOnClickListener {
-            val intent = Intent(this@HomePage, DoorActivity::class.java)
-            startActivity(intent)
-        }
-        findViewById<CardView>(R.id.remoteCard).setOnClickListener {
-            val intent = Intent(this@HomePage, TvActivity::class.java)
-            startActivity(intent)
-        }
-
-        findViewById<CardView>(R.id.cameraCard).setOnClickListener {
-            val intent = Intent(this@HomePage, SecurityCamera::class.java)
-            startActivity(intent)
-        }
-        //in this method we create the new activities for each feature
-    }
+//    override fun onContextItemSelected(item: MenuItem): Boolean {
+//        when (item.itemId) {
+//            android.R.id.home -> {
+//                finish()
+//                return true
+//            }
+//        }
+//        return super.onContextItemSelected(item)
+//    }
 }

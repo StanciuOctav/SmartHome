@@ -10,20 +10,18 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
- class HomePage: AppCompatActivity() {
+class SecurityCamera: AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.homepage)
+        setContentView(R.layout.security_camera)
         // calling the action bar
         var actionBar = supportActionBar
-
         if (actionBar != null) {
             // showing the back button and title in action bar
             actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
             actionBar.setCustomView(R.layout.abs_layout);
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
             //TO DO - set with logged username
         }
 
@@ -52,19 +50,9 @@ import androidx.cardview.widget.CardView
     // Private methods
 
     private fun clickedCardView() {
-        findViewById<CardView>(R.id.doorCard).setOnClickListener {
-            val intent = Intent(this@HomePage, DoorActivity::class.java)
+        findViewById<CardView>(R.id.cameraCard1).setOnClickListener {
+            val intent = Intent(this@SecurityCamera, SecurityCameraDetails::class.java)
             startActivity(intent)
         }
-        findViewById<CardView>(R.id.remoteCard).setOnClickListener {
-            val intent = Intent(this@HomePage, TvActivity::class.java)
-            startActivity(intent)
-        }
-
-        findViewById<CardView>(R.id.cameraCard).setOnClickListener {
-            val intent = Intent(this@HomePage, SecurityCamera::class.java)
-            startActivity(intent)
-        }
-        //in this method we create the new activities for each feature
     }
 }
