@@ -37,6 +37,9 @@
         <activity android:name=".LightsActivity"
             android:exported="false">
         </activity>
+        <activity android:name=".TemperatureActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
