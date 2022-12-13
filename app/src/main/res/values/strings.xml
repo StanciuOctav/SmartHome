@@ -4,7 +4,6 @@
     <string name="username">Username</string>
     <string name="homepage_string">"Choose..."</string>
     <!--    LOGIN SCREEN-->
-    <string name="homepage_string">Choose...</string>
 
     <!-- Security Camera -->
     <string name="security_camera_string">Choose camera</string>
