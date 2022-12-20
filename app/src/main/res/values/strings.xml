@@ -51,8 +51,11 @@
     <!--    TV REMOTE SCREEN-->
     <string name="tv_string">TV REMOTE</string>
 
-
-
+    <string-array name="irrigation_string_array">
+        <item>PowerSpray</item>
+        <item>Full Body</item>
+        <item>Mist</item>
+    </string-array>
 
 
 

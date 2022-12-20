@@ -81,6 +81,11 @@ class HomePage: AppCompatActivity() {
             val intent = Intent(this@HomePage, AirQualityActivity::class.java)
             startActivity(intent)
         }
+
+        findViewById<CardView>(R.id.sprinklerCard).setOnClickListener {
+            val intent = Intent(this@HomePage, IrrigationActivity::class.java)
+            startActivity(intent)
+        }
         //in this method we create the new activities for each feature
     }
 }
