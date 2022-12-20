@@ -68,6 +68,9 @@
             android:name=".TvActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".air.AirQualityActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
