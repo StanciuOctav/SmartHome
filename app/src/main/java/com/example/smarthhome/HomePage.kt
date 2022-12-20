@@ -71,10 +71,10 @@ import androidx.cardview.widget.CardView
             startActivity(intent)
         }
 
-//        findViewById<CardView>(R.id.temperatureCard).setOnClickListener {
-//            val intent = Intent(this@HomePage, TemperatureActivity::class.java)
-//            startActivity(intent)
-//        }
+        findViewById<CardView>(R.id.thermometerCard).setOnClickListener {
+            val intent = Intent(this@HomePage, TemperatureActivity::class.java)
+            startActivity(intent)
+        }
         //in this method we create the new activities for each feature
     }
 }

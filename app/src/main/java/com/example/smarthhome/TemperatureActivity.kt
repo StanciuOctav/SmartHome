@@ -2,6 +2,7 @@ package com.example.smarthhome
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.Menu
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
@@ -45,5 +46,17 @@ class TemperatureActivity: AppCompatActivity() {
             }
 
         })
+    }
+
+    // add menu button to action bar
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.abs_menu, menu);
+        return true
+    }
+
+    //handle back button click
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
