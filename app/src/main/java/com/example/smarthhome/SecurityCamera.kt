@@ -55,4 +55,10 @@ class SecurityCamera: AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    //handle back button click
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }
