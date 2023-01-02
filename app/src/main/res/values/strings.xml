@@ -22,9 +22,18 @@
     <string name="username_input">Username</string>
     <string name="signup">Don\'t you have an account? Sign up</string>
 
-    <string name="wrong_username_string"></string>
-    <string name="wrong_pass_string"></string>
-    <string name="success_string"></string>
+<!--    Wheelchair -->
+    <string name="front_ramp">Front ramp</string>
+    <string name="back_ramp">Back ramp</string>
+    <string name="add_ramp">Add ramp</string>
+    <string name="choose_ramp">Choose ramp</string>
+
+<!--    Kitchen   -->
+    <string name="oven">Oven</string>
+    <string name="microwave">Microwave</string>
+    <string name="add_appliance">Add appliance</string>
+    <string name="choose_appliance">Choose appliance</string>
+    <string name="set_program">Set program</string>
 
 <!--    REGISTER SCREEN-->
     <string name="register_title">Please create an account</string>
@@ -50,6 +59,19 @@
 
     <!--    TV REMOTE SCREEN-->
     <string name="tv_string">TV REMOTE</string>
+    <string name="celsius">C</string>
+    <string name="fahrenheit">F</string>
+    <string name="ventilation">Ventilation</string>
+    <string name="preheat">Preheat</string>
+    <string name="temperature">Temperature</string>
+    <string name="end_time">End Time</string>
+    <string name="start_time">Start Time</string>
+    <string name="save">SAVE</string>
+    <string name="choose_vacuum">Choose Vacuum</string>
+    <string name="vacuum">Vacuum</string>
+    <string name="add_vacuum">Add vacuum</string>
+    <string name="mop_after">Mop after</string>
+    <string name="empty_dust_after">Empty dust after</string>
 
     <string-array name="irrigation_string_array">
         <item>PowerSpray</item>

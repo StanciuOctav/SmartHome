@@ -50,6 +50,12 @@ class HomePage: AppCompatActivity() {
         return super.onContextItemSelected(item)
     }
 
+    //handle back button click
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     // Private methods
 
     private fun clickedCardView() {
@@ -84,6 +90,21 @@ class HomePage: AppCompatActivity() {
 
         findViewById<CardView>(R.id.sprinklerCard).setOnClickListener {
             val intent = Intent(this@HomePage, IrrigationActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.wheelchairCard).setOnClickListener {
+            val intent = Intent(this@HomePage, WheelChairActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.ovenCard).setOnClickListener {
+            val intent = Intent(this@HomePage, KitchenActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.vacuumCard).setOnClickListener {
+            val intent = Intent(this@HomePage, VacuumActivity::class.java)
             startActivity(intent)
         }
         //in this method we create the new activities for each feature

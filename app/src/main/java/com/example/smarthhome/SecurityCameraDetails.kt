@@ -35,14 +35,9 @@ class SecurityCameraDetails: AppCompatActivity() {
         return true
     }
 
-    // this event will enable the back function to the button on press
-//    override fun onContextItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            android.R.id.home -> {
-//                finish()
-//                return true
-//            }
-//        }
-//        return super.onContextItemSelected(item)
-//    }
+    //handle back button click
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

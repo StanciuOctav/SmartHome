@@ -1,21 +1,18 @@
 package com.example.smarthhome
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
-import android.view.View
 import android.widget.Switch
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.front_door_details_layout.*
-
-
 
 class DoorDetailsActivity: AppCompatActivity()  {
     private lateinit var textViewChosenDoor: TextView
 
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val intent = intent
@@ -35,6 +32,7 @@ class DoorDetailsActivity: AppCompatActivity()  {
         }
 
        initializeView(doorTitle)
+        val switchLockDoor = findViewById<Switch>(R.id.switchLockDoor)
         switchLockDoor.setOnClickListener {
             if (switchLockDoor.isChecked){
                // main.setBackgroundColor(Color.DKGRAY)
