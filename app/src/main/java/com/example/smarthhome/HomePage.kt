@@ -72,6 +72,14 @@ class HomePage: AppCompatActivity() {
             val intent = Intent(this@HomePage, SecurityCamera::class.java)
             startActivity(intent)
         }
+        findViewById<CardView>(R.id.windowCard).setOnClickListener {
+            val intent = Intent(this@HomePage, WindowActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<CardView>(R.id.energyCard).setOnClickListener {
+            val intent = Intent(this@HomePage, EnergyConsumptionActivity::class.java)
+            startActivity(intent)
+        }
 
         findViewById<CardView>(R.id.lightCard).setOnClickListener {
             val intent = Intent(this@HomePage, LightsActivity::class.java)

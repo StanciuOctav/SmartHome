@@ -54,8 +54,8 @@
     <string name="bedroom_door_string">Bedroom door</string>
     <string name="balcony_door_string">Balcony door</string>
 
-    <!--    DOOR DETAILS SCREEN-->
-    <string name="door_notifications_string">Notifications</string>
+    <!--    DOOR/WINDOW DETAILS SCREEN-->
+    <string name="notifications_string">Notifications</string>
 
     <!--    TV REMOTE SCREEN-->
     <string name="tv_string">TV REMOTE</string>
@@ -72,6 +72,22 @@
     <string name="add_vacuum">Add vacuum</string>
     <string name="mop_after">Mop after</string>
     <string name="empty_dust_after">Empty dust after</string>
+
+    <!--    WINDOW SCREEN-->
+    <string name="window_title_string">Choose a window:</string>
+    <string name="front_window_string">Front window</string>
+    <string name="back_window_string">Back window</string>
+    <string name="bedroom_window_string">Bedroom window</string>
+    <string name="balcony_window_string">Balcony window</string>
+
+    <!--    ENERGY CONSUMPTION SCREEN-->
+    <string name="choose_month_string">Select a month for energy consumption visualization:</string>
+
+    <!--    WINDOW SCREEN-->
+    <string name="smart_curtains_morning_string">Set a morning hour for smart curtains</string>
+    <string name="smart_curtains_evening_string">Set an evening hour for smart curtains</string>
+
+
 
     <string-array name="irrigation_string_array">
         <item>PowerSpray</item>

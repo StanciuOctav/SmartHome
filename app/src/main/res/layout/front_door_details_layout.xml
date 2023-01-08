@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="@string/door_notifications_string"
+        android:text="@string/notifications_string"
         android:textColor="@color/black"
         android:layout_marginBottom="20dp"
         android:textSize="20sp"></TextView>
@@ -58,6 +58,7 @@
 
 
         <LinearLayout
+            android:id="@+id/layout_front_door"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -77,8 +78,6 @@
                 android:id="@+id/textViewInfo2"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:layout_gravity="center_vertical"
-                android:gravity="center"
                 android:text="Someone tried to unlock the door at 9:00 PM"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/messages" />

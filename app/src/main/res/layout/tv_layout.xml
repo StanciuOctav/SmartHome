@@ -27,32 +27,32 @@
 
     <GridLayout
         android:id="@+id/mainGrid"
-        android:columnCount="3"
-        android:rowCount= "4"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#BEF4F4E4"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:padding="5dp">
+        android:layout_weight="10"
+        android:alignmentMode="alignMargins"
+        android:background="#D1DEEA"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:padding="5dp"
+        android:rowCount="4">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/powerCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="powerClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -74,28 +74,29 @@
             android:id="@+id/previousCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="previousClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/tv_previous"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tv_previous" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -104,28 +105,29 @@
             android:id="@+id/nextCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="nextClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/tv_next"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tv_next" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -133,28 +135,29 @@
             android:id="@+id/volumeDownCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="turnDownClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/tv_volume_down"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tv_volume_down" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -163,28 +166,29 @@
             android:id="@+id/volumeUpCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="turnUpClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/tv_volume_up"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tv_volume_up" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -192,28 +196,29 @@
             android:id="@+id/muteCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="muteClick"
             app:cardBackgroundColor="#BA5C98B5"
-            >
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/tv_volume_mute"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tv_volume_mute" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
