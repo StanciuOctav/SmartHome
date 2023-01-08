@@ -1,33 +1,34 @@
-package com.example.smarthhome
+package com.example.smarthhome.air
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import com.example.smarthhome.R
 
-class SecurityCameraDetails: AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class AirQualityDetailsActivity:AppCompatActivity() {
+
+    private lateinit var roomName: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.security_camera_details)
-        // calling the action bar
-        var actionBar = supportActionBar
+        setContentView(R.layout.air_quality_details_layout)
+        val actionBar = supportActionBar
 
         if (actionBar != null) {
             // showing the back button and title in action bar
             actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
-            actionBar.setCustomView(R.layout.abs_layout);
             actionBar.setDisplayHomeAsUpEnabled(true);
-            //TO DO - set with logged username
         }
+
+        initViews()
+        roomName.text = roomName.text.toString() + intent.getStringExtra("RoomName")
     }
 
-    // Override methods
+    private fun initViews() {
+        roomName = findViewById(R.id.airRoomNameTextView)
+    }
 
     // add menu button to action bar
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

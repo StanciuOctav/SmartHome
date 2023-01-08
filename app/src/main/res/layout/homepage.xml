@@ -26,7 +26,7 @@
     </RelativeLayout>
 
     <GridLayout
-        android:id="@+id/mainGrid"
+        android:id="@+id/temperatureCard"
         android:columnCount="3"
         android:rowCount= "4"
         android:alignmentMode="alignMargins"

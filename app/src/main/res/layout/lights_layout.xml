@@ -27,7 +27,7 @@
     </RelativeLayout>
 
     <GridLayout
-        android:id="@+id/mainGrid"
+        android:id="@+id/lightMainGrid"
         android:columnCount="3"
         android:rowCount= "2"
         android:alignmentMode="alignMargins"
@@ -42,7 +42,7 @@
         >
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/groundFloorBathroomCard"
+        android:id="@+id/lightGroundFloorBathroomCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
@@ -76,7 +76,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/livingRoomCard"
+        android:id="@+id/lightLivingRoomCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
@@ -110,7 +110,7 @@
     </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/kidsBedroomCard"
+            android:id="@+id/lightKidsBedroomCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -144,7 +144,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/parentsBedroomCard"
+            android:id="@+id/lightParentsBedroomCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -178,7 +178,7 @@
         </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/parentBathroomCard"
+        android:id="@+id/lightParentBathroomCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
@@ -211,7 +211,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/upstairsBathroomCard"
+        android:id="@+id/lightUpstairsBathroomCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"

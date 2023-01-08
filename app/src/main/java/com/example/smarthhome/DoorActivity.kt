@@ -15,8 +15,9 @@ class DoorActivity: AppCompatActivity()  {
 
         if (actionBar != null) {
             // showing the back button and title in action bar
-            actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+            actionBar.setCustomView(R.layout.abs_layout)
+            actionBar.setDisplayHomeAsUpEnabled(true)
         }
 
         clickedCardView()

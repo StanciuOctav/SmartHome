@@ -10,14 +10,13 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
-class SecurityCameraDetails: AppCompatActivity() {
+class KitchenActivity: AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.security_camera_details)
+        setContentView(R.layout.kitchen_layout)
         // calling the action bar
         var actionBar = supportActionBar
-
         if (actionBar != null) {
             // showing the back button and title in action bar
             actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
@@ -25,6 +24,8 @@ class SecurityCameraDetails: AppCompatActivity() {
             actionBar.setDisplayHomeAsUpEnabled(true);
             //TO DO - set with logged username
         }
+
+        clickedCardView()
     }
 
     // Override methods
@@ -33,6 +34,26 @@ class SecurityCameraDetails: AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.abs_menu, menu);
         return true
+    }
+
+    // this event will enable the back function to the button on press
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onContextItemSelected(item)
+    }
+
+    // Private methods
+
+    private fun clickedCardView() {
+        findViewById<CardView>(R.id.ovenCard1).setOnClickListener {
+            val intent = Intent(this@KitchenActivity, OvenDetailsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     //handle back button click

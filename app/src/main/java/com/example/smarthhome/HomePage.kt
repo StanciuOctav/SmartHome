@@ -9,8 +9,9 @@ import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.example.smarthhome.air.AirQualityActivity
 
- class HomePage: AppCompatActivity() {
+class HomePage: AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +50,12 @@ import androidx.cardview.widget.CardView
         return super.onContextItemSelected(item)
     }
 
+    //handle back button click
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     // Private methods
 
     private fun clickedCardView() {
@@ -71,6 +78,41 @@ import androidx.cardview.widget.CardView
         }
         findViewById<CardView>(R.id.energyCard).setOnClickListener {
             val intent = Intent(this@HomePage, EnergyConsumptionActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.lightCard).setOnClickListener {
+            val intent = Intent(this@HomePage, LightsActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.thermometerCard).setOnClickListener {
+            val intent = Intent(this@HomePage, TemperatureActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.airCard).setOnClickListener {
+            val intent = Intent(this@HomePage, AirQualityActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.sprinklerCard).setOnClickListener {
+            val intent = Intent(this@HomePage, IrrigationActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.wheelchairCard).setOnClickListener {
+            val intent = Intent(this@HomePage, WheelChairActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.ovenCard).setOnClickListener {
+            val intent = Intent(this@HomePage, KitchenActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<CardView>(R.id.vacuumCard).setOnClickListener {
+            val intent = Intent(this@HomePage, VacuumActivity::class.java)
             startActivity(intent)
         }
         //in this method we create the new activities for each feature

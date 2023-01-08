@@ -5,16 +5,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.NumberPicker
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
-class SecurityCamera: AppCompatActivity() {
+class OvenDetailsActivity: AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.security_camera)
+        setContentView(R.layout.oven_details_layout)
         // calling the action bar
         var actionBar = supportActionBar
         if (actionBar != null) {
@@ -23,9 +28,9 @@ class SecurityCamera: AppCompatActivity() {
             actionBar.setCustomView(R.layout.abs_layout);
             actionBar.setDisplayHomeAsUpEnabled(true);
             //TO DO - set with logged username
+            setupNumberPicker()
+            setUpButton()
         }
-
-        clickedCardView()
     }
 
     // Override methods
@@ -47,14 +52,34 @@ class SecurityCamera: AppCompatActivity() {
         return super.onContextItemSelected(item)
     }
 
-    // Private methods
-
-    private fun clickedCardView() {
-        findViewById<CardView>(R.id.cameraCard1).setOnClickListener {
-            val intent = Intent(this@SecurityCamera, SecurityCameraDetails::class.java)
-            startActivity(intent)
+    private fun setUpButton() {
+        val button = findViewById<Button>(R.id.saveButton)
+        button.setOnClickListener {
+            onBackPressed()
+            Toast.makeText(baseContext, "Program set successfully", Toast.LENGTH_SHORT).show()
         }
     }
+
+    private fun setupNumberPicker() {
+        val celsiusButton = findViewById<RadioButton>(R.id.radio_pirates)
+        val fahrenheitButton = findViewById<RadioButton>(R.id.radio_ninjas)
+        val numberPicker = findViewById<NumberPicker>(R.id.numberPicker)
+        celsiusButton.setOnClickListener {
+            if (celsiusButton.isChecked) {
+                numberPicker.minValue = 120
+                numberPicker.maxValue = 200
+            }
+        }
+        fahrenheitButton.setOnClickListener {
+            if (fahrenheitButton.isChecked) {
+                numberPicker.minValue = 248
+                numberPicker.maxValue = 392
+            }
+        }
+        numberPicker.minValue = 120
+        numberPicker.maxValue = 200
+    }
+
 
     //handle back button click
     override fun onSupportNavigateUp(): Boolean {
