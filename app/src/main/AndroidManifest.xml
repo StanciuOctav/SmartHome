@@ -68,6 +68,23 @@
             android:name=".TvActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".WindowActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".WindowDetailsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".EnergyConsumptionActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".EnergyConsumptionChartActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

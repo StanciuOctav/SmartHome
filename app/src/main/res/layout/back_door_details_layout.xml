@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="@string/door_notifications_string"
+        android:text="@string/notifications_string"
         android:textColor="@color/black"
         android:layout_marginBottom="20dp"
         android:textSize="20sp"></TextView>
@@ -58,6 +58,7 @@
 
 
         <LinearLayout
+            android:id="@+id/layout_back_door"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
